@@ -43,10 +43,6 @@
     "build": "tsdown",
     "typecheck": "tsc --noEmit -p tsconfig.json"
   },
-  "peerDependencies": {
-    "@deepseek-ai/cordis": "*",
-    "react": ">=18"
-  },
   "devDependencies": {
     "@types/node": "^22.10.0",
     "@types/react": "~18.3.1",
