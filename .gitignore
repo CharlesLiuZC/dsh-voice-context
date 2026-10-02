@@ -1,0 +1,13 @@
+node_modules/
+*.log
+.DS_Store
+
+# 本地离线后端的运行时产物
+local/funasr/.venv/
+local/funasr/__pycache__/
+local/funasr/*.py[cod]
+local/funasr/models/
+
+# 真实密钥
+.env
+local/funasr/.env

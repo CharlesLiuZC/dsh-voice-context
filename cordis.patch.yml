@@ -1,0 +1,19 @@
+# dsh-voice-context bundle layer.
+#
+# Applied when a profile lists this package in `dsh.profile.bundles`. The row's
+# node half (lib/index.js) registers the `/voice-context` Connection RPC channel
+# and the `/voice-local` command; its `dsh.client` manifest puts the package on
+# the browser roster, contributing the composer mic button and the settings
+# section.
+#
+# Configure the STT provider on this row from your own profile patch; the
+# defaults below are the schema defaults restated for visibility.
+- insert:
+    - id: voice-context
+      name: 'dsh-voice-context'
+      config:
+        baseUrl: https://api.siliconflow.cn
+        model: FunAudioLLM/SenseVoiceSmall
+        language: zh
+        localPort: 8000
+        pythonBin: python
